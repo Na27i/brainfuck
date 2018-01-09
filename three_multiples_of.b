@@ -1,25 +1,43 @@
-=== layout =================================
+=== update =================================
 
+ver 1.0   Implementing the program to disp numbers and to disp "!" with number when multiples of 3 
+ver 1.1   Add function of new line
+ver 1.2   Add function of Enter a number
+ver 1.3   Add function of to disp "!" with number when 3 is attached(will)
+
+============================================
+
+=== layout =================================
+ver 1.0
 0  A1   constant : counter
+
 1  B1   variable : comparison(1)
 2  B2   variable : comparison(2)
+
 3  C1   variable : flag of "comparison"
 4  C2   variable : flag of "threee multiples of"
 5  C3   variable : flag of "display"
+
 6  D1   variable : the hundred's place
 7  D2   variable : the ten's place
 8  D3   variable : the one's place
+
+ver 1.1
 9  E1   Character code(space 32)
 10 E2   Character code(! 33)
 11 E3   Character code(\n 10)
 12 F1   variable : flag of "new line"
 13 F2   variable : counter(F1)
-14 E4   Character code(: 58)
-15 E5   Character code(( 40 & ) 41)
+
+ver 1.2
+14 G4   Character code(: 58)
+15 G5   Character code(( 40 & ) 41)
+
+ver 1.3
+16 H1   variable : flag of "attach(1)"
+17 H2   variable : flag of "attach(10)"
 
 ============================================
-
-105 110 112 117 116 32 110 117 109 98 101 114 32 58 32
 
 // setup
 ( A1 )>>>>( C2 )+++     // ste C2 3
@@ -58,8 +76,6 @@
 <<<<<<<<<( A1 ),     // input
 >>>>>>>>>>>( F1 ).     // newline(10)
 <<<<<<<<<<<( A1 )
-
-
 // main
 [
    ( A1 )>>>>>>>>( D3 )+     // add D3 1
